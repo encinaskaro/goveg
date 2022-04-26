@@ -1,0 +1,141 @@
+body {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.267) 0%, rgba(0, 0, 0, 0.699) 100%), url(fooy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #000000;
+    width: 100%;
+}
+input[type="number"] {
+    background-color: #b81c1c;
+    color: rgb(138, 108, 108);
+    margin: 10px;
+    padding: 20px;
+    border: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.menu{
+    position: absolute;
+    right: 20px;
+}
+.menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: #5f2885b4;
+}
+h1 {
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    padding-top: 90px;
+    padding-left: 20px;
+ }
+
+.btn {
+    display: none;
+    position: absolute;
+    left: 20px;
+}
+.btn:hover > span {
+    background-color: #5f2885b4;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 20px 20px 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 550px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background:  #5f2885b4;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+}
+
+  .imagen1{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 29%;
+    height: 75%;
+    padding: 0px;
+    
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium';
+  }
+  .container {
+    margin: auto;
+    width: 20%;
+    background-color: #fafafa88;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 27px;
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25,
+    input[type="submit"]{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  .contenedor {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    background-color: #000000;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 20px;
+    
+  }
